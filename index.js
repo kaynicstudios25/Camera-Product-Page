@@ -21,13 +21,3 @@ function openTab(evt, contentName) {
         document.querySelector(".tablinks").click();
     });
 
-
-var resize = document.getElementsById('productT');
-window.onresize=function() {
-    if (window.innerWidth <= 767) {
-        resize.style = "font-size: 100px;";
-    }
-    else {
-        resize.style = "font-size: 180px;";
-    };
-}

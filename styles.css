@@ -73,6 +73,13 @@ a:hover {
 /* Consists of the navbar | links | main img | gallery */
 
 .hero {
+    width: 100%;
+    max-width: 1180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 
     .product {
         position: relative;
@@ -90,12 +97,14 @@ a:hover {
         margin: auto;
     }
 
-    #productT {
-        position: absolute;
-        bottom: 1vh;
-        left: 34vw;
-        transform: translate( -50%, -50% );
 
+    #productT {
+
+
+        margin-inline: 45px;
+        position: absolute;
+        z-index: 1;
+        bottom: 1vh;
         h1 {
             font-size: clamp(60px, 12vw, 180px);
             line-height: clamp(50px, 11vw, 160px);
@@ -104,6 +113,7 @@ a:hover {
         h5 {
             font-size: clamp(14px, 2.5vw, 24px);
             line-height: clamp(18px, 3vw, 28px);
+            color: #F77111;
         }
 
     }
@@ -112,24 +122,58 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 24px;
+        padding-block: 1rem;
+        gap: 1vw;
         margin: auto;
+
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
 
         img {
             width: 100%;
             max-width: 100px;
         }
+
+        
     }
     
 }
 
+.breadcrumb {
+        position: relative;
+        z-index: 1;
+        color: #ffffff;
+        bottom: 52vh;
+        padding: 0 0.5rem;
+
+        ol {
+            display: flex;
+            flex-direction: row;
+            padding-inline: 24px;
+        }
+
+        i {
+            padding-inline: 24px;
+        }
+
+        a {
+            color:#ffffff;
+        }
+
+        span {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+
 .tabs {
     display: flex;
-    width: 390px;
+    width: 65vw;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     align-self: stretch;
+    padding-bottom: 12px;
 }
 
 button {
@@ -140,11 +184,16 @@ button {
     border-top: none;
     border-color: white;
     color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-button  :hover {
+button:hover {
     border-color: #F77111;
-    cursor: pointer;
+}
+
+button:active {
+    border-color: #F77111;
 }
 
 /* PRODUCT DESCRIPTION */
@@ -206,6 +255,39 @@ button  :hover {
     font-weight: 500;
     color: #ffffffa5;
     margin-left: -4px;
+}
+
+
+table {
+    table-layout: fixed;
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+th,
+td {
+  vertical-align: top;
+  padding: 0.3em;
+}
+
+tr :nth-child(2),
+tr :nth-child(3) {
+  text-align: right;
+  width: 15%;
+}
+
+tr :nth-child(0) {
+    text-align: center;
+    width: 50%;
+}
+
+tr :nth-child(1),
+tr :nth-child(4) {
+  text-align: left;
+  width: 35%;
 }
 
 /* NEWSLETTER */
@@ -349,9 +431,14 @@ footer {
     display: none
   }
 
+  .hamburger {
+    display: flex;
+  }
+
   #productT {
+    position: absolute;
+    left: 20%;
+    z-index: 1;
     bottom: 1vh;
-    left: 80%;
-    transform: translate(-50%, -50%);
   }
 }
