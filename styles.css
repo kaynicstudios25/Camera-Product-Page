@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* GLOBAL STYLES */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +12,10 @@
 body  {
     font-family: "Poppins", sans-serif;
     background: linear-gradient(180deg, #F77111 0%, #000 100%);
+    /* background: black; */
     color: white;
     font-size: 16px;
-    padding: 32px
+    padding-block-end: 32px;
 }
 
 i {
@@ -20,38 +23,62 @@ i {
     padding-right: 8px;
 }
 
+
+.newBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding: 1.5rem;
+    background: #e5660b;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.links, ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.hamburger {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+
 /* HERO SECTION */
 /* Consists of the navbar | links | main img | gallery */
 
 .hero {
-    .navBar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    .links {
-
-        /* display: none; */
-        gap: 12px;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-    }
-
-    a:hover {
-        font-weight: 600;
-        cursor: pointer;
+    .product {
+        position: relative;
+        width: 100%;
+        max-width: 1180px;
+        margin: auto;
     }
 
     .mainImg {
@@ -61,6 +88,24 @@ i {
         justify-content: center;
         align-items: center;
         margin: auto;
+    }
+
+    #productT {
+        position: absolute;
+        bottom: 1vh;
+        left: 34vw;
+        transform: translate( -50%, -50% );
+
+        h1 {
+            font-size: clamp(60px, 12vw, 180px);
+            line-height: clamp(50px, 11vw, 160px);
+        }
+
+        h5 {
+            font-size: clamp(14px, 2.5vw, 24px);
+            line-height: clamp(18px, 3vw, 28px);
+        }
+
     }
 
     .gallery {
@@ -78,30 +123,129 @@ i {
     
 }
 
+.tabs {
+    display: flex;
+    width: 390px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border-inline: none;
+    border-top: none;
+    border-color: white;
+    color: white;
+}
+
+button  :hover {
+    border-color: #F77111;
+    cursor: pointer;
+}
+
+/* PRODUCT DESCRIPTION */
+
 .tab-container {
-    background: rgba(255, 255, 255, 0.2);
+    color: white;
     width: 100%;
     max-width: 1180px;
 
     border-radius: 32px;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.242);
 
     margin-inline: auto;
-    margin-block: 50px;
+    margin-block: 42px;
     padding: 24px;
 
 }
 
-/* #productDescription {} */
 .productr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     color: #F77111;
 
     img {
         width: 100%;
-        max-width: 216px;
+        max-width: 150px;
+    }
+
+}
+
+.qualities {
+
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+
+    .topl, .topr, .bottomr, .bottoml {
+        display: flex;
+        height: 30px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex: 1 0 0;
+        color: #ffffff;
+    }
+    
+}
+
+
+
+.cent {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffffa5;
+    margin-left: -4px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    width: 100vw;
+
+    form, #email {
+        display: flex;
+        width: 100%px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+
+
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: none;
+    }
+
+     #submit {
+        background-color: #F77111;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+
+        display: flex;
+        width: 100px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 }
 
@@ -121,17 +265,26 @@ footer {
     justify-content: space-around;
     padding: 1rem;
 
+    
 
     .NavigateCol {
         display: flex;
         flex-direction: column;
         align-items: left;
+
+        h3 {
+            color:#F77111
+        }
     }
 
     .SupportCol {
         display: flex;
         flex-direction: column;
         align-items: left;
+
+        h3 {
+            color:#F77111
+        }
     }
 
     .ContactCol {
@@ -156,13 +309,12 @@ footer {
         text-decoration: none;
         display: flex;
     }
+}
 
-    .socials {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
+.socials {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
 }
 
 .copyright {
@@ -173,21 +325,33 @@ footer {
     font-size: 14px;
 }
 
+/* RESPONSIVE DESIGN */
+
 /* Tablet */
 @media screen and (max-width: 1023px) {
-  body {
-    background-color: rgb(254, 159, 159);
+  /* body {
+    background: rgb(254, 159, 159);
+  } */
+
+  #productT {
+    bottom: 4vh;
+    left: 30vw;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 767px) {
-  body {
-    background-color: rgb(254, 229, 159);
-  }
+  /* body {
+    background: rgb(254, 229, 159);
+  } */
 
   .links {
     display: none
   }
 
+  #productT {
+    bottom: 1vh;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
 }

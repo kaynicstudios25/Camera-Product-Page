@@ -9,43 +9,40 @@
     <!-- StyleSheet(s) Link -->
      <link rel="stylesheet" href="styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-/>
-
-
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
     <title>Tech King | Helios Pro 4</title>
 </head>
 <body>
     <div class="newBanner">
         <p>Free Shipping Nationwide</p>
     </div>
-    <section class="hero">
-        <nav class="navBar">
-            <div class="logo">
-                <img src="Assets/Icons/icon.png" alt="Tech King Logo">
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="hamburger">
-                <i class="fa fa-bars"></i>
-            </div>
-        </nav>
+    <nav class="navBar">
+        <div class="logo">
+            <img src="Assets/Icons/icon.png" alt="Tech King Logo">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+    <div class="hero">
         <div class="product">
            <img class="mainImg" src="Assets/Gallery/mainImg.png" alt="Image of a camera">
-            <div class="productT">
+            <div id="productT">
                 <h5>Full Frame Mirrorless</h5>
-                <h1 class="largeT">Helios Pro 4</h1>
+                <h1 id="largeT">Helios Pro 4</h1>
             </div> 
         </div>
-        
         
         <div class="gallery">
             <i class="fa fa-arrow-left"></i>
@@ -55,43 +52,25 @@
             <img src="Assets/Gallery/img4.png" alt="a man taking a photo in the woods">
             <i class="fa fa-arrow-right"></i>
         </div>
-    </section>
+    </div>
 
     <div class="tab-container">
-  <div class="tabs">
+        <div class="tabs">
     <button class="tablinks active" onclick="openTab(event, 'ProductDescription')">Product Description</button>
     <button class="tablinks" onclick="openTab(event, 'Reviews')">Reviews</button>
     <button class="tablinks active" onclick="openTab(event, 'ShippingWarranty')">Shipping & Warranty</button>
-  </div>
-
-  <div id="ProductDescription" class="tabcontent">
-    <div class="productr">
-        <img src="Assets/Icons/RatingLG.png" alt="Product rating 4.5/5">
-        <p>4.5 / 127 Reviews</p>
-    </div>
-    <h2>$2,500 <span>00</span></h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque.</p>
-    <div class="qualities">
-        <div class="top">
-            <div class="topl">
-               <p>Free Returns</p> 
-            </div>
-            <div class="topr">
-                <p>Secure Payment</p>
-            </div>
         </div>
-        <div class="bottom">
-            <div class="bottoml">
-               <p>Earn 2,999 points</p> 
+    
+        <div id="ProductDescription" class="tabcontent">
+            <div class="productr">
+                <img src="Assets/Icons/RatingLG.png" alt="Product rating 4.5/5">
+                <p>4.5 / 127 Reviews</p>
             </div>
-            <div class="bottomr">
-                <p>Free exhibited shipping</p>
-            </div>
+            <h2>$2,500 <span class="cent">00</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facilis voluptatibus facere, doloremque earum quam maiores aliquid, non ipsa provident ab reiciendis et laborum maxime exercitationem nisi quos explicabo tenetur praesentium! Fugiat earum expedita unde ullam ut natus eveniet ab consequuntur laboriosam voluptate officiis atque dolorem corporis quam excepturi, saepe architecto vel, sit quibusdam. Autem vero quos temporibus debitis saepe.</p>
         </div>
-    </div>
-  </div>
-
-  <div id="Reviews" class="tabcontent" style="display:none;">
+    
+        <div id="Reviews" class="tabcontent" style="display:none;">
     <div class="ratingContent">
         <div class="rating">
             <h1>4.5</h1>
@@ -99,9 +78,9 @@
             <p>127 Ratings</p>
         </div>
     </div>
-  </div>
-
-  <div id="ShippingWarranty" class="tabcontent" style="display:none;">
+        </div>
+    
+        <div id="ShippingWarranty" class="tabcontent" style="display:none;">
     <table>
         <h3>Shipping</h3>
         <tr>
@@ -171,18 +150,37 @@
             <td href="mailto:support@techking.camera">support@techking.camera</td>
         </tr>
     </table>
-  </div>
-</div>
+        </div>
+    </div>
 
-    <article>
+    <div class="qualities">
+        <div class="top">
+            <div class="topl">
+               <p>Free Returns</p> 
+            </div>
+            <div class="topr">
+                <p>Secure Payment</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottoml">
+               <p>Earn 2,999 points</p> 
+            </div>
+            <div class="bottomr">
+                <p>Free exhibited shipping</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter">
         <h2>Don't Miss Any Updates</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
         <form action="#">
             <input type="text" id="email" name="email" placeholder="Email">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit">
         </form>
-    </article>
-  
+    </div>
+
     <footer>
         <div class="columns">
             <div class="NavigateCol">
@@ -210,40 +208,16 @@
             </div>
         </div>
         <div class="socials">
-            <i class="fa-brand fa-tiktok"></i>
-            <i class="fa-brand fa-instagram"></i>
-            <i class="fa-brand fa-linkedin"></i>
-            <i class="fa-brand fa-pinterest"></i>
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-pinterest"></i>
         </div>
         <div class="copyright">
             <p>© Tech King </p>
         </div> 
     </footer>
    
-    <script>
-    function openTab(evt, contentName) {
-        // Hide all tab content
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-        // Deactivate all tab links
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(contentName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-
-        document.addEventListener("DOMContentLoaded", () => {
-        document.querySelector(".tablinks").click();
-    });
-
-</script>
+    <script src="index.js"></script>
 </body>
 </html>
