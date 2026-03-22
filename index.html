@@ -6,22 +6,23 @@
     <meta name="keywords" content="Tech King, Helios Pro 4, Technology, Gadgets, Reviews">
     <meta name="author" content="Name of the Author">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- StyleSheet(s) Link -->
-     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-     <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
     <title>Tech King | Helios Pro 4</title>
 </head>
 <body>
+
     <div class="newBanner">
         <p>Free Shipping Nationwide</p>
     </div>
+
     <nav class="navBar">
-        <div class="logo">
+        <a href="./index.html" class="logo">
             <img src="Assets/Icons/icon.png" alt="Tech King Logo">
-        </div>
-        <div class="links">
+        </a>
+        <div id="links">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
@@ -31,10 +32,11 @@
             </ul>
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
-        <div class="hamburger">
+        <a class="hamburger" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-        </div>
+        </a>
     </nav>
+
     <div class="hero">
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <ol>
@@ -46,15 +48,10 @@
                 <i class="fa-solid fa-chevron-right"></i>
                 <li><span aria-current="page">Helios Pro 4</span></li>
             </ol>
-           </nav>
-        <div id="productT">
-                <h5>Full Frame Mirrorless</h5>
-                <h1 id="largeT">Helios Pro 4</h1>
-        </div> 
+        </nav>
         <div class="product">
-           <img class="mainImg" src="Assets/Gallery/mainImg.png" alt="Image of a camera">
+            <img class="mainImg" src="Assets/Gallery/mainImg.png" alt="Image of a camera">
         </div>
-        
         <div class="gallery">
             <i class="fa fa-arrow-left"></i>
             <img src="Assets/Gallery/img1.png" alt="a man taking a photo in the mountains">
@@ -63,130 +60,123 @@
             <img src="Assets/Gallery/img4.png" alt="a man taking a photo in the woods">
             <i class="fa fa-arrow-right"></i>
         </div>
+        <div id="productT">
+            <h5>Full Frame Mirrorless</h5>
+            <h1 id="largeT">Helios Pro 4</h1>
+        </div>
     </div>
 
     <div class="tab-container">
-        <div class="tabs">
-    <button class="tablinks active" onclick="openTab(event, 'ProductDescription')">Product Description</button>
-    <button class="tablinks" onclick="openTab(event, 'Reviews')">Reviews</button>
-    <button class="tablinks active" onclick="openTab(event, 'ShippingWarranty')">Shipping & Warranty</button>
-        </div>
-    
-        <div id="ProductDescription" class="tabcontent">
+        <nav class="tabs">
+            <button class="pt-btn active" data-tab="desc">Product Description</button>
+            <button class="pt-btn" data-tab="reviews">Reviews</button>
+            <button class="pt-btn" data-tab="shipping">Shipping &amp; Warranty</button>
+        </nav>
+
+        <!-- ── PANEL: Description ───────────────────────────────────────── -->
+        <div id="desc" class="pt-panel active">
             <div class="productr">
                 <img src="Assets/Icons/RatingLG.png" alt="Product rating 4.5/5">
                 <p>4.5 / 127 Reviews</p>
             </div>
-            <h2>$2,500 <span class="cent">00</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facilis voluptatibus facere, doloremque earum quam maiores aliquid, non ipsa provident ab reiciendis et laborum maxime exercitationem nisi quos explicabo tenetur praesentium! Fugiat earum expedita unde ullam ut natus eveniet ab consequuntur laboriosam voluptate officiis atque dolorem corporis quam excepturi, saepe architecto vel, sit quibusdam. Autem vero quos temporibus debitis saepe.</p>
+            <h2 class="pt-price">$2,500<sup class="cent">00</sup></h2>
+            <p class="pt-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facilis voluptatibus facere, doloremque earum quam maiores aliquid, non ipsa provident ab reiciendis et laborum maxime exercitationem nisi quos explicabo tenetur praesentium! Fugiat earum expedita unde ullam ut natus eveniet ab consequuntur laboriosam voluptate officiis atque dolorem corporis quam excepturi, saepe architecto vel, sit quibusdam. Autem vero quos temporibus debitis saepe.</p>
+            <div class="qualities">
+                <div class="top">
+                    <div class="topl"><p>Free Returns</p></div>
+                    <div class="topr"><p>Secure Payment</p></div>
+                </div>
+                <div class="bottom">
+                    <div class="bottoml"><p>Earn 2,999 points</p></div>
+                    <div class="bottomr"><p>Free exhibited shipping</p></div>
+                </div>
+            </div>
         </div>
-    
-        <div id="Reviews" class="tabcontent" style="display:none;">
-    <div class="ratingContent">
-        <div class="rating">
-            <h1>4.5</h1>
-            <img src="Assets/Icons/ratingSM.png" alt="small 4.5 rating">
-            <p>127 Ratings</p>
-        </div>
-    </div>
-        </div>
-    
-        <div id="ShippingWarranty" class="tabcontent" style="display:none;">
-    <table>
-        <h3>Shipping</h3>
-        <tr>
-            <th>Shipping Method</th>
-            <th>Estimated Delivery Time</th>
-            <th>Cost</th>
-        </tr>
-        <tr>
-            <td>Standard Shipping</td>
-            <td>5-7 business days</td>
-            <td>$5.99</td>
-        </tr>
-        <tr>
-            <td>Express Shipping</td>
-            <td>2-3 business days</td>
-            <td>$12.99</td>
-        </tr>
-        <tr>
-            <td>Overnight Shipping</td>
-            <td>1 business day</td>
-            <td>$24.99</td>
-        </tr>
-    </table>
-    <h3>Returns</h3>
-    <table>
-        <tr>
-            <th>Returns</th>
-            <th>Info</th>
-        </tr>
-        <tr>
-            <td>Window</td>
-            <td>30 Days</td>
-        </tr>
-        <tr>
-            <td>Condition</td>
-            <td>Unused + Pkg</td>
-        </tr>
-        <tr>
-            <td>Refund</td>
-            <td>Orignal Pay</td>
-        </tr>
-         <tr>
-            <td>Processing</td>
-            <td>5 - 7 Days</td>
-        </tr>
-    </table>
-    <h3>Warranty</h3>
-    <table>
-        <tr>
-            <th>Warranty</th>
-            <th>Info</th>
-        </tr>
-        <tr>
-            <td>Coverage</td>
-            <td>30 Days</td>
-        </tr>
-        <tr>
-            <td>Defects</td>
-            <td>Unused + Pkg</td>
-        </tr>
-        <tr>
-            <td>Extended</td>
-            <td>Orignal Pay</td>
-        </tr>
-         <tr>
-            <td>Support</td>
-            <td href="mailto:support@techking.camera">support@techking.camera</td>
-        </tr>
-    </table>
-        </div>
-    </div>
+        <!-- ── END PANEL: Description ──────────────────────────────────── -->
 
-    <div class="qualities">
-        <div class="top">
-            <div class="topl">
-               <p>Free Returns</p> 
+        <!-- ── PANEL: Reviews ──────────────────────────────────────────── -->
+        <div id="reviews" class="pt-panel">
+            <div class="ratingContent">
+
+                <div class="container">
+                    <div class="rating">
+                        <h1>4.5</h1>
+                        <img src="Assets/Icons/ratingSM.png" alt="small 4.5 rating">
+                        <p>127 Ratings</p>
+                    </div>
+                    <div class="row">
+                        <div class="side"><div>5 star</div></div>
+                        <div class="middle"><div class="bar-container"><div class="bar-5"></div></div></div>
+                        <div class="side right"><div>68%</div></div>
+
+                        <div class="side"><div>4 star</div></div>
+                        <div class="middle"><div class="bar-container"><div class="bar-4"></div></div></div>
+                        <div class="side right"><div>20%</div></div>
+
+                        <div class="side"><div>3 star</div></div>
+                        <div class="middle"><div class="bar-container"><div class="bar-3"></div></div></div>
+                        <div class="side right"><div>7%</div></div>
+
+                        <div class="side"><div>2 star</div></div>
+                        <div class="middle"><div class="bar-container"><div class="bar-2"></div></div></div>
+                        <div class="side right"><div>3%</div></div>
+
+                        <div class="side"><div>1 star</div></div>
+                        <div class="middle"><div class="bar-container"><div class="bar-1"></div></div></div>
+                        <div class="side right"><div>2%</div></div>
+                    </div>
+                    <div class="Stats">
+                        <div class="ratingStats"><h3>98%</h3><h6>Rating</h6></div>
+                        <div class="ratingStats"><h3>4.8</h3><h6>Quality</h6></div>
+                        <div class="ratingStats"><h3>4.6</h3><h6>Value</h6></div>
+                    </div>
+                </div>
+                <div class="custCont">
+                    <div id="customer"></div>
+                </div>
             </div>
-            <div class="topr">
-                <p>Secure Payment</p>
-            </div>
+            <a href="#" class="commentLink">View More</a>
         </div>
-        <div class="bottom">
-            <div class="bottoml">
-               <p>Earn 2,999 points</p> 
-            </div>
-            <div class="bottomr">
-                <p>Free exhibited shipping</p>
-            </div>
+        <!-- ── END PANEL: Reviews ──────────────────────────────────── -->
+
+
+        <!-- ── PANEL: Shipping ─────────────────────────────────────────── -->
+        <div id="shipping" class="pt-panel">
+            <h4>Shipping</h4>
+            <table>
+                <tr><th>Shipping Method</th><th>Cost</th></tr>
+                <tr><td>Standard Shipping <span class="days">(5 - 7 Days)</span></td><td>$5.99</td></tr>
+                <tr><td>Express Shipping <span class="days">(2 - 3 Days)</span></td><td>$12.99</td></tr>
+                <tr><td>Overnight Shipping <span class="days">(1 Day)</span></td><td>$24.99</td></tr>
+            </table>
+
+            <h4>Returns</h4>
+            <table>
+                <tr><th>Returns</th><th>Info</th></tr>
+                <tr><td>Window</td><td>30 Days</td></tr>
+                <tr><td>Condition</td><td>Unused + Pkg</td></tr>
+                <tr><td>Refund</td><td>Original Pay</td></tr>
+                <tr><td>Processing</td><td>5 - 7 Days</td></tr>
+            </table>
+
+            <h4>Warranty</h4>
+            <table>
+                <tr><th>Warranty</th><th>Info</th></tr>
+                <tr><td>Coverage</td><td>2 Years (parts &amp; labour)</td></tr>
+                <tr><td>Defects</td><td>Manufacturing faults only</td></tr>
+                <tr><td>Extended</td><td>3-yr plan available at checkout</td></tr>
+                <tr><td>Support</td><td><a href="mailto:support@techking.camera">support@techking.camera</a></td></tr>
+            </table>
         </div>
+        <!-- ── END PANEL: Shipping ─────────────────────────────────────── -->
+
     </div>
+    <!-- END .tab-container -->
 
     <div class="newsletter">
         <h2>Don't Miss Any Updates</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-        <form action="#">
+        <form action="#" class="send">
             <input type="text" id="email" name="email" placeholder="Email">
             <input type="submit" value="Submit" id="submit">
         </form>
@@ -195,7 +185,7 @@
     <footer>
         <div class="columns">
             <div class="NavigateCol">
-                <h3>Navigate</h3>
+                <h6>Navigate</h6>
                 <a href="#">Home</a>
                 <a href="#">Products</a>
                 <a href="#">About Us</a>
@@ -203,7 +193,7 @@
                 <a href="#">Contact Us</a>
             </div>
             <div class="SupportCol">
-                <h3>Support</h3>
+                <h6>Support</h6>
                 <a href="#">FAQ</a>
                 <a href="#">Shipping</a>
                 <a href="#">Returns</a>
@@ -214,7 +204,7 @@
                 <img src="Assets/Icons/icon.png" alt="Tech King Logo">
                 <div class="content">
                     <a href="tel:+11234567890"><span><i class="fa fa-mobile"></i></span> (123)456-7890</a>
-                    <a href="mailto:support@techking.camera" ><span><i class="fa fa-envelope"></i></span> support@techking.camera</a>
+                    <a href="mailto:support@techking.camera"><span><i class="fa fa-envelope"></i></span> support@techking.camera</a>
                 </div>
             </div>
         </div>
@@ -225,10 +215,10 @@
             <i class="fab fa-pinterest"></i>
         </div>
         <div class="copyright">
-            <p>© Tech King </p>
-        </div> 
+            <p>© Tech King</p>
+        </div>
     </footer>
-   
-    <script src="index.js"></script>
+
+    <script type="module" src="./javascript/main.js"></script>
 </body>
 </html>

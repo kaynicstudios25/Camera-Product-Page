@@ -1,0 +1,49 @@
+/* BANNER */
+
+.newBanner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    padding: 1.5rem;
+    background: #e5660b;
+}
+
+/* NAVBAR */
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#links, ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.hamburger {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+        font-weight: 600;
+        cursor: pointer;
+    }

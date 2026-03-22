@@ -1,0 +1,242 @@
+/* TAB CONTAINER */
+
+.tab-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs, button {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-size: var(--lg);
+    line-height: var(--lg-line);
+}
+
+.pt-btn.active {
+    background: var(--secondary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.pt-panel {
+    display: none;
+}
+
+.pt-panel.active {
+    display: block;
+}
+
+button:hover {
+    background: #bf5306;
+    font-weight: 600;
+}
+
+/* PRODUCT INFORMATION */
+
+#desc {
+    width: 100%;
+    padding: 24px;
+    background: var(--white-10);
+    border: 1px solid var(--primary);
+}
+
+.productr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F57519;
+}
+
+.cent {
+    font-size: var(--h4);
+    padding-left: -8px;
+}
+
+.qualities {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-block: 1rem;
+    padding: .5rem;
+
+    p {
+        font-size: var(--lg);
+        line-height: var(--lg-line);
+        padding: 1rem;
+    }
+}
+
+.top, .bottom {
+    display: flex;
+    width: 100%;
+}
+
+.topl, .topr, .bottoml, .bottomr {
+    width: 100%;
+    border: 1px solid var(--primary);
+}
+
+
+
+/* REVIEW SECTION */
+#reviews {
+    padding: 24px;
+    border: 1px solid var(--primary);
+    background: var(--white-10);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.rating, p {
+    font-size: var(--lg);
+}
+
+.bar-5 {width: 68%; height: 18px; background-color: var(--secondary);}
+.bar-4 {width: 20%; height: 18px; background-color: var(--secondary);}
+.bar-3 {width: 7%; height: 18px; background-color: var(--secondary);}
+.bar-2 {width: 3%; height: 18px; background-color: var(--secondary);}
+.bar-1 {width: 2%; height: 18px; background-color: var(--secondary);}
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.right {
+    text-align: right;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bar-container {
+    width: 100%;
+    background: var(--white-40);
+}
+
+/* STATS CARDS */
+
+.Stats {
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    gap: 24px;
+    
+}
+
+.ratingStats {
+    /* background: var(--test); */
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h6 {
+        color: var(--primary);
+    }
+}
+
+/* CUSTOMER REVIEWS CONTAINERS */
+
+.custCont {
+    display: flex;
+    
+}
+
+.checked {
+    color: var(--secondary);
+}
+
+#customer {
+    display: flex;
+    gap: 24px;
+}
+
+.customerCard {
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.custrating {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 12px;
+}
+
+.date {
+    padding-top: 12px;
+    font-size: var(--xs);
+}
+
+/* CONTAINER LINK */
+
+.commentLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: underline;
+}
+
+/* SHIPPING INFORMATION */
+#shipping {
+    border: 1px solid var(--primary);
+    padding: 24px;
+
+    h4 {
+        text-align: center;
+        padding-block: 1rem;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+td, th {
+    background: var(--white-10);
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background: var(--secondary);
+     color: white;
+}

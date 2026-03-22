@@ -1,0 +1,17 @@
+/* GLOBAL STYLES */
+
+@import url(./style.css);
+
+/* COMPONENTS */
+@import url(./components/navBar.css);
+@import url(./components/hero.css);
+@import url(./components/table.css);
+@import url(./components/newsletter.css);
+@import url(./components/footer.css);
+
+/* PAGES */
+@import url(./pages/Product.css);
+
+/* RESPONSIVE */
+@import url(./tablet.css);
+@import url(./mobile.css);

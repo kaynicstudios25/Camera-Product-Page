@@ -1,0 +1,11 @@
+/* Tablet */
+@media screen and (max-width: 1023px) {
+  /* body {
+    background: rgb(254, 159, 159);
+  } */
+
+  #productT {
+    bottom: 4vh;
+    left: 30vw;
+  }
+}

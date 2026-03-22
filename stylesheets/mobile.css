@@ -1,0 +1,44 @@
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+  #links {
+    display: none
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #productT {
+    /* position: absolute; */
+    left: 20%;
+    z-index: 1;
+    bottom: 1vh;
+  }
+
+  .customer1, .customer2,.customer3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customer1 {
+    
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+
+    .NavigateCol, .SupportCol, .ContactCol {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+  }
+}

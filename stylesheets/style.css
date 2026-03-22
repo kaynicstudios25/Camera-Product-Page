@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background-color: linear-gradient(180deg, #F77111 0%, #000 100%);
+    --primary: white;
+    --secondary: #F77111;
+    --test: black;
+   --white-10: rgba(235, 235, 235, 0.10);
+    --white-20: rgba(235, 235, 235, 0.20);
+    --white-40: rgba(235, 235, 235, 0.40);
+
+    /* FONT TOKENS */
+    --primary-font: "Poppins", sans-serif;
+
+    /* Headers */
+    --h1: 60px;
+    --h1-m: 48px;
+    --h1-line: 72px;
+    --h1-line-m: 56px;
+
+    --h2: 48px;
+    --h2-m: 40px;
+    --h2-line: 56px;
+    --h2-line-m: 48px;
+
+    --h3: 40px;
+    --h3-m: 32px;
+    --h3-line: 48px;
+    --h3-line-m: 40px;
+
+    --h4: 32px;
+    --h4-m: 28px;
+    --h4-line: 40px;
+    --h4-line-m: 32px;
+
+    --h5: 24px;
+    --h5-m: 24px;
+    --h5-line: 28px;
+    --h5-line-m: 28px;
+
+    --h6: 20px;
+    --h6-m: 20px;
+    --h6-line: 24px;
+    --h6-line-m: 24px;
+
+    --lg: 20px;
+    --lg-m: 20px;
+    --lg-line: 24px;
+    --lg-line-m: 24px;
+
+    --md: 16px;
+    --md-m: 16px;
+    --md-line: 20px;
+    --md-line-m: 20px;
+
+    --sm: 14px;
+    --sm-m: 14px;
+    --sm-line: 16px;
+    --sm-line-m: 16px;
+
+    --xs: 12px;
+    --xs-m: 12px;
+    --xs-line: 16px;
+    --xs-line-m: 16px;
+}

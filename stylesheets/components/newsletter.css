@@ -1,0 +1,46 @@
+/* NEWSLETTER */
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin: auto;
+    padding: 50px;
+    width: 100%;
+
+    .send {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+   /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+        width: 40%;
+        background-color: var(--secondary);
+        color: var(--primary);
+        border: none;
+        border-radius: 8px;
+        margin-left: 12px;
+        font-size: var(--lg);
+        
+    }
+
+    input[type=submit]:hover {
+        opacity: 0.8;
+    }
+}
