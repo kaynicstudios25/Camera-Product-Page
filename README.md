@@ -27,4 +27,5 @@ What I learned
 - Make it responsive
 
 ## 🍿 Video
-<video src="./Assets/product-page-cam.mov" width="100%" ></video>
+
+https://github.com/user-attachments/assets/59cd8f4d-2022-462e-a5b8-9a090cdf2d12
